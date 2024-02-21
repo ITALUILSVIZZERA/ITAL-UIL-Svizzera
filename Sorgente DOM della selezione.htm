@@ -1,78 +1,452 @@
 <!DOCTYPE html>
-<html lang="it">
-
+<html  lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuo Titolo</title>
-    <style>
-        /* Aggiungi qui eventuali stili CSS personalizzati */
-    </style>
-</head>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:image" content="/var/m_8/8d/8d4/1647/92302-logo ital svizzera mf ato.jpg" />
+<meta name="last-modified" content="2020-02-07 16:15:27" />
+<meta name="generator" content="Swisscom HomepageTool" />
+<meta name="robots" content="index,follow" />
+<meta property="og:url" content="https://www.ital-uil.ch/" />	<title>ITALUIL Svizzera</title>	<link href="/var/m_8/8d/8d4/1647/11169-favicon.ico" rel="SHORTCUT ICON" type="image/x-icon" />
+<link href="/css/extra-fonts.css?v=7.3.44939" media="screen" rel="stylesheet" type="text/css" />
+<link href="/css/widgets/concat_widget.min.css?v=7.3.44939" media="screen" rel="stylesheet" type="text/css" />
+<link href="/templates/creator/m_9/98/98f/20/css/main.min.css?v=1483633808" media="screen" rel="stylesheet" type="text/css" id="template-grid" />
+<link href="/templates/creator/m_9/98/98f/20/css/style.min.css?v=1483633808" media="screen" rel="stylesheet" type="text/css" id="template-skin" />
+<link href="https://www.ital-uil.ch/" rel="canonical" />		
 
+	<style>.free-text-image .freetext-image .image_wrapper{display:block;}</style>
+            <script>
+                jQuery(window).load(function(){
+                    if(navigator.userAgent.indexOf('Safari') != -1
+                    && navigator.userAgent.indexOf('Chrome') == -1
+                    && navigator.userAgent.indexOf('Edge') == -1
+                    && $('.editing-mode').length == 0){
+                        $('img').each(function(){
+                            if($(this).height() == 0){
+                                var img = new Image();
+                                img.src = $(this).attr('src');
+                                var parent = $(this).parent();
+                                $(this).detach();
+                                parent.append(img);
+                            }
+                        });
+                    }
+                });
+            </script>
+	
+	<link type="text/css" href="/css/skeleton.css" rel="stylesheet">
+<script type="text/javascript" src="/templates/creator/m_9/98/98f/20/assets/jquery.scroll-follow.js?v=1483633808"></script>
+<script type="text/javascript" src="/templates/creator/m_9/98/98f/20/assets/respond.min.js?v=1483633808"></script>
+
+
+
+<!--[if lt IE 9]>
+   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+
+   function scrollToFunc() {
+      window.scrollTo(0,0);
+   }
+
+   function addFixedMenu() {
+      /* scroll-follow */
+      $( '#fixed_mobile_action_menu' ).scrollFollow(
+         {speed: 300,relativeTo: 'bottom'}
+      );
+   }
+
+   $(function() {
+      setTimeout('scrollToFunc()',850);
+      setTimeout('addFixedMenu()',1000);
+   });
+
+   $(document).ready(function() {
+
+      /* --- mobile menu --- */
+      $('.mobilenav').toggle(function(){
+         $('#top-navigation').stop().slideDown(700);
+      },function(){
+         $('#top-navigation').stop().slideUp(700);
+      });
+      
+      if($("ul#nav").length < 1){
+		$(".mobilenav").css("display","none");
+	}
+$(window).bind('orientationchange', function(e) {
+var curTxt = $(".plus-toggle").text();
+var $lefty = $(".buttons-nav");
+   switch ( window.orientation ) {
+        case 90:
+        case -90:
+        case 0:
+           if (curTxt == "[-]") {
+               $lefty.css({
+                  width: $(window).width(),
+              });
+           };
+        break;
+      }
+});
+	
+$(".plus-toggle").click(function () {
+  var curTxt = $(this).text();
+  var $lefty = $(".buttons-nav");
+
+    if (curTxt == "[+]") {
+      //open
+      $(this).text("[-]");
+      $lefty.css({
+          width: $(window).width(),
+          left: -$(window).width()
+      });
+      $lefty.show();
+      $lefty.animate({
+        left: 0
+      });
+    }else{
+      $(this).text("[+]");
+      //close
+      $lefty.animate({
+        left: -10 - ($lefty.outerWidth())
+      });
+    }
+    
+});
+
+});
+</script>
+
+<style type="text/css" media="screen">
+<!--
+ #content { color: #000000; }
+
+-->
+</style></head>
 <body>
-    <div class="sk-container">
-        <div class="logo-container four columns alpha">
-            <h2><a href="/" class="logo"><h1><span style="color:#FFFFFF;">.</span></h1>
-                    <h1><span style="color:#FFFFFF;">.</span><br><br>
-                        <strong><span style="font-size:72px;">PATRONATO</span></strong><br>&nbsp;</h1>
-                </a> </h2>
-        </div>
 
-        <button class="mobilenav">≡</button>
-        <div id="top-navigation" class="clearfix sixteen">
-            <ul id="nav" class="menu_count_10 dddd">
-                <li id="menu_2794" class="first current  lb_2794 menu-item-home"><a href="/" target="_self"
-                        title="Home" data-pageid="2794" data-act="canvas" data-itemid="2775"
-                        data-cat="0">Home</a> </li>
-                <li id="menu_2954" class=" lb_2954 menu-item-toppage"><a href="/chi-siamo.shtml" target="_self"
-                        title="Chi siamo " data-pageid="2954" data-act="canvas" data-itemid="2928"
-                        data-cat="0">Chi siamo </a> </li>
-                <li id="menu_923683" class=" lb_923683 menu-item-toppage"><a href="/chi-siamo-copy.shtml"
-                        target="_self" title="Wer sind wir " data-pageid="923683" data-act="canvas"
-                        data-itemid="975992" data-cat="0">Wer sind wir </a> </li>
-                <li id="menu_923684" class=" lb_923684 menu-item-toppage"><a href="/chi-siamo-deutsch-copy.shtml"
-                        target="_self" title="Qui sommes-nous? " data-pageid="923684" data-act="canvas"
-                        data-itemid="975993" data-cat="0">Qui sommes-nous? </a> </li>
-                <li id="menu_2955" class=" lb_2955 menu-item-toppage"><a href="/sedi-ital-in-svizzera.shtml"
-                        target="_self" title="Le sedi in Svizzera" data-pageid="2955" data-act="canvas"
-                        data-itemid="2929" data-cat="0">Le sedi in Svizzera</a> </li>
-                <li id="menu_2956" class=" lb_2956 menu-item-toppage"><a href="/domande-al-ital.shtml"
-                        target="_self" title="Contatto" data-pageid="2956" data-act="canvas"
-                        data-itemid="2930" data-cat="0">Contatto</a> </li>
-                <li id="menu_2979" class=" lb_2979 menu-item-toppage"><a href="/eventi-ital.shtml" target="_self"
-                        title="Eventi ITAL" data-pageid="2979" data-act="canvas" data-itemid="2952"
-                        data-cat="0">Eventi ITAL</a> </li>
-                <li id="menu_32546" class="last lb_32546 menu-item-events"><a href="/serate-ital.shtml"
-                        target="_self" title="Serate informative" data-pageid="32546" data-act="events"
-                        data-itemid="0" data-cat="0">Serate informative</a> </li>
-            </ul>
-        </div>
+   <div id="fixed_mobile_action_menu" class="nav-wrapper">
+      <div id="plus" class="plus-toggle">[+]</div>
+      <ul class="buttons-nav" style="display:none;">
+         <li class="mobile-action-btn"><a href="tel:">Chiamaci adesso!</a></li>
+         <li class="seperator"></li>
+         <li  class="map-action-btn"><a href="https://maps.google.com/maps?q=Switzerland">Trovaci sulla mappa</a></li>
+         <li class="seperator"></li>
+         <li  class="email-action-btn"><a href="mailto:callcenter.italuil@bluewin.ch">Inviateci una email</a></li>
+      </ul>
+   </div>   
 
-        <div class="menu twelve columns omega">
-            <ul id="nav" class="menu_count_10 dddd">
-                <li id="menu_2794" class="first current  lb_2794 menu-item-home"><a href="/" target="_self"
-                        title="Home" data-pageid="2794" data-act="canvas" data-itemid="2775"
-                        data-cat="0">Home</a> </li>
-                <li id="menu_2954" class=" lb_2954 menu-item-toppage"><a href="/chi-siamo.shtml" target="_self"
-                        title="Chi siamo " data-pageid="2954" data-act="canvas" data-itemid="2928"
-                        data-cat="0">Chi siamo </a> </li>
-                <li id="menu_923683" class=" lb_923683 menu-item-toppage"><a href="/chi-siamo-copy.shtml"
-                        target="_self" title="Wer sind wir " data-pageid="923683" data-act="canvas"
-                        data-itemid="975992" data-cat="0">Wer sind wir </a> </li>
-                <li id="menu_923684" class=" lb_923684 menu-item-toppage"><a href="/chi-siamo-deutsch-copy.shtml"
-                        target="_self" title="Qui sommes-nous? " data-pageid="923684" data-act="canvas"
-                        data-itemid="975993" data-cat="0">Qui sommes-nous? </a> </li>
-                <li id="menu_2955" class=" lb_2955 menu-item-toppage"><a href="/sedi-ital-in-svizzera.shtml"
-                        target="_self" title="Le sedi in Svizzera" data-pageid="2955" data-act="canvas"
-                        data-itemid="2929" data-cat="0">Le sedi in Svizzera</a> </li>
-                <li id="menu_2956" class=" lb_2956 menu-item-toppage"><a href="/domande-al-ital.shtml"
-                        target="_self" title="Contatto" data-pageid="2956" data-act="canvas"
-                        data-itemid="2930" data-cat="0">Contatto</a> </li>
-                <li id="menu_2979" class=" lb_2979 menu-item-toppage"><a href="/eventi-ital.shtml" target="_self"
-                        title="Eventi ITAL" data-pageid="2979" data-act="canvas" data-itemid="2952"
-                        data-cat="0">Eventi ITAL</a> </li>
-                <li id="menu_32546" class="last lb_32546 menu-item-events"><a href="/serate-ital.shtml"
-                        target="_self" title="Serate informative" data-pageid="32546" data-act="events"
-                        data-itemid="0" data-cat="0">Serate informative</a> </
+   <div class="sk-container">
+      <div class="logo-container four columns alpha">
+         <h2><a href="/" class="logo"><h1><span style="color:#FFFFFF;">.</span></h1>
+
+<h1><span style="color:#FFFFFF;">.</span><br />
+<br />
+<strong><span style="font-size:72px;">PATRONATO</span></strong><br />
+&nbsp;</h1>
+</a> </h2>
+      </div>
+
+      <button class="mobilenav">≡</button>
+      <div id="top-navigation" class="clearfix sixteen">
+         <ul id="nav" class="menu_count_10 dddd"><li id="menu_2794" class="first current  lb_2794 menu-item-home"><a href="/" target="_self" title="Home" data-pageid="2794" data-act="canvas" data-itemid="2775" data-cat="0">Home</a> </li><li id="menu_2954" class=" lb_2954 menu-item-toppage"><a href="/chi-siamo.shtml" target="_self" title="Chi siamo " data-pageid="2954" data-act="canvas" data-itemid="2928" data-cat="0">Chi siamo </a> </li><li id="menu_923683" class=" lb_923683 menu-item-toppage"><a href="/chi-siamo-copy.shtml" target="_self" title="Wer sind wir " data-pageid="923683" data-act="canvas" data-itemid="975992" data-cat="0">Wer sind wir </a> </li><li id="menu_923684" class=" lb_923684 menu-item-toppage"><a href="/chi-siamo-deutsch-copy.shtml" target="_self" title="Qui sommes-nous? " data-pageid="923684" data-act="canvas" data-itemid="975993" data-cat="0">Qui sommes-nous? </a> </li><li id="menu_2955" class=" lb_2955 menu-item-toppage"><a href="/sedi-ital-in-svizzera.shtml" target="_self" title="Le sedi in Svizzera" data-pageid="2955" data-act="canvas" data-itemid="2929" data-cat="0">Le sedi in Svizzera</a> </li><li id="menu_2956" class=" lb_2956 menu-item-toppage"><a href="/domande-al-ital.shtml" target="_self" title="Contatto" data-pageid="2956" data-act="canvas" data-itemid="2930" data-cat="0">Contatto</a> </li><li id="menu_2979" class=" lb_2979 menu-item-toppage"><a href="/eventi-ital.shtml" target="_self" title="Eventi ITAL" data-pageid="2979" data-act="canvas" data-itemid="2952" data-cat="0">Eventi ITAL</a> </li><li id="menu_32546" class="last lb_32546 menu-item-events"><a href="/serate-ital.shtml" target="_self" title="Serate informative" data-pageid="32546" data-act="events" data-itemid="0" data-cat="0">Serate informative</a> </li></ul>      </div>
+
+      <div class="menu twelve columns omega"><ul id="nav" class="menu_count_10 dddd"><li id="menu_2794" class="first current  lb_2794 menu-item-home"><a href="/" target="_self" title="Home" data-pageid="2794" data-act="canvas" data-itemid="2775" data-cat="0">Home</a> </li><li id="menu_2954" class=" lb_2954 menu-item-toppage"><a href="/chi-siamo.shtml" target="_self" title="Chi siamo " data-pageid="2954" data-act="canvas" data-itemid="2928" data-cat="0">Chi siamo </a> </li><li id="menu_923683" class=" lb_923683 menu-item-toppage"><a href="/chi-siamo-copy.shtml" target="_self" title="Wer sind wir " data-pageid="923683" data-act="canvas" data-itemid="975992" data-cat="0">Wer sind wir </a> </li><li id="menu_923684" class=" lb_923684 menu-item-toppage"><a href="/chi-siamo-deutsch-copy.shtml" target="_self" title="Qui sommes-nous? " data-pageid="923684" data-act="canvas" data-itemid="975993" data-cat="0">Qui sommes-nous? </a> </li><li id="menu_2955" class=" lb_2955 menu-item-toppage"><a href="/sedi-ital-in-svizzera.shtml" target="_self" title="Le sedi in Svizzera" data-pageid="2955" data-act="canvas" data-itemid="2929" data-cat="0">Le sedi in Svizzera</a> </li><li id="menu_2956" class=" lb_2956 menu-item-toppage"><a href="/domande-al-ital.shtml" target="_self" title="Contatto" data-pageid="2956" data-act="canvas" data-itemid="2930" data-cat="0">Contatto</a> </li><li id="menu_2979" class=" lb_2979 menu-item-toppage"><a href="/eventi-ital.shtml" target="_self" title="Eventi ITAL" data-pageid="2979" data-act="canvas" data-itemid="2952" data-cat="0">Eventi ITAL</a> </li><li id="menu_32546" class="last lb_32546 menu-item-events"><a href="/serate-ital.shtml" target="_self" title="Serate informative" data-pageid="32546" data-act="events" data-itemid="0" data-cat="0">Serate informative</a> </li></ul></div>
+
+      <div class="clear"></div>
+
+      <div class="headerimage sixteen columns alpha">
+         <div class="box"><div id="header-image-wrapper-1"><img src="/var/m_8/8d/8d4/1647/92302-logo ital svizzera mf ato.jpg" id="siteMainDynHeaderImage1" style="border:0px" /></div></div>
+         
+      </div>
+
+      <div class="content sixteen columns alpha" id="content">
+         <div class="main-content skinBg sixteen columns alpha"><br><div class="search-container"> 
+<!-- Search Start -->
+<div id="Search-module" class="module-wrapper">
+    <form name="search" method="post" id="search" action="/search" style="margin:0px;">		         
+        <input type="text" name="str" placeholder="Ricerca..."  id="str" class="search_field" maxlength="255"/>
+        <input type="submit" name="dAction" value="Vai!" class="search_button" />
+    </form>
+    <div id="searching_box" style="display: none">
+	    <img src="/gfx/loading.gif" style="float: left" alt="Ricerca"/>
+	    <div style="float: left; margin: 0.5em 0 0 0.3em">Ricerca</div>
+	</div>
+	<div style="clear: both"></div>
+</div>
+</div>
+<!-- Search End -->
+<div id="searchResults"></div>            <h1 class="titles">Home</h1>
+            <div id="wp_content_data"><div class="vertical" style="width: 100%;"><div class="widget-wrapper widget-element free-text diy-resizable ">
+
+		<div id="widget-id-18231" 
+		class="widget-body " style="">
+		<div class="freetextarea">	
+	<h4>&nbsp;<strong>PRIMO piano<em> notizie</em></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br></h4><div style="text-align:right"><br></div><div><br></div></div>
+<div class="clear"></div>	</div>
+</div>
+
+
+<div class="widget-wrapper widget-element free-text-image diy-resizable ">
+
+		<div id="widget-id-9728688" 
+		class="widget-body " style="">
+				<div class="freetext-image" style=" width:10.583153347732182%; float:left;text-align-left">
+
+			<div class="image_wrapper free-image-left">
+			
+				
+				<img id="7302554"
+				     src="/var/m_8/8d/8d4/1647/7302554-canone ok.png" 
+				     alt="canone rai esenzione " 
+				     style="width:100%;"/> 
+					    
+
+			</div>	 
+			
+				
+		</div>
+		<div class="freetextarea" >
+			<h3><span style="color:#0000FF"><span style="font-size:20px"><strong>Esenzione Canone RAI&nbsp;&nbsp; -&nbsp; 2020</strong></span></span><br>AUTOCERTIFICAZIONE&nbsp; <span style="font-size:9px;">(per i residenti al estero inviare entro e non oltre 31.12.2019 al agenzia delle entrate, Torino)</span></h3><div><br>Per compilare questo formulario occorre copia<strong> </strong>del <strong>documento d'identità e </strong><strong>codice fiscale</strong> dove sono riportati i dati necessari<br>all'autodichiarazione<br><br></div><div>Comunque, per semplificare e documentare la richiesta di esenzione dal pagamento del canone TV, suggeriamo;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><strong>Rivolgiti con fiducia alla Sede </strong><em><a href="http://www.uim.it/uimweb/index.php/blog" data-cke-saved-href="http://www.uim.it/uimweb/index.php/blog">&nbsp;&nbsp;&nbsp;&nbsp; UIM più vicina al tuo domicilio&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; </a></em><strong><em><a href="http://ital-uil.ch/sedi-ital-in-svizzera.shtml" data-cke-saved-href="http://ital-uil.ch/sedi-ital-in-svizzera.shtml">Le sedi ITAL in Svizzera</a></em></strong></div><div><br></div>		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+
+<div class="horizontal clearfix" style="background-color: #dbdaf7;-ms-box-shadow: 5px 5px 0px 0px #69845b;-webkit-box-shadow: 5px 5px 0px 0px #69845b;-o-box-shadow: 5px 5px 0px 0px #69845b;box-shadow: 5px 5px 0px 0px #69845b;-mox-box-shadow: 5px 5px 0px 0px #69845b;"><div class="diy-splitter-inner clearfix"><div class="vertical" style="width: 50%;"><div class="widget-wrapper widget-element free-text-image diy-resizable ">
+
+		<div id="widget-id-20036" 
+		class="widget-body " style="">
+				<div class="freetext-image" style=" width:33.18681318681318%; float:left;text-align-left">
+
+			<div class="image_wrapper free-image-left">
+			
+				
+				<img id="11161"
+				     src="/var/m_8/8d/8d4/1647/11161-inps inweis.gif" 
+				     alt="" 
+				     style="width:100%;"/> 
+					    
+
+			</div>	 
+			
+				
+		</div>
+		<div class="freetextarea" >
+			<div><div><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-size:20px"><span style="color:rgb(0, 0, 255)">INPS</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong><span style="font-size:18px"><span style="color:rgb(0, 0, 255)"><strong>RED/EST&nbsp;&nbsp; 2018 e 2019</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VIENI ALL’ ITALUIL</span></span><br></div></div>		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+
+<div class="widget-wrapper widget-element free-text diy-resizable ">
+
+		<div id="widget-id-20038" 
+		class="widget-body " style="">
+		<div class="freetextarea">	
+	<div><div><div><div><strong>&nbsp;l’INPS invierà a tutti i pensionati una lettera con il modello<br>RED/EST&nbsp; 2019.</strong><br></div>La invitiamo a presentarsi al più presto presso l’Ufficio ITAL-UIL più vicino al suo domicilio affinché i nostri operatori possano aiutarla con professionalità e cortesia, assistendola gratuitamente, nel compilare e trasmettere il formulario all’INPS in modo veloce e sicuro. Troverà gli indirizzi dei nostri uffici nella pagina <strong><em>“<a href="http://ital-uil.ch/sedi-ital-in-svizzera.shtml" data-cke-saved-href="http://ital-uil.ch/sedi-ital-in-svizzera.shtml">Le sedi ITAL in Svizzera</a>”.</em></strong></div><br><br></div></div></div>
+<div class="clear"></div>	</div>
+</div>
+
+
+<div class="widget-wrapper widget-element free-text-image diy-resizable ">
+
+		<div id="widget-id-133336" 
+		class="widget-body " style="">
+				<div class="freetext-image" style=" width:25.274725274725274%; float:left;text-align-left">
+
+			<div class="image_wrapper free-image-left">
+			
+				
+				<img id="89246"
+				     src="/var/m_8/8d/8d4/1647/89246-cud info bild.png" 
+				     alt="cud 2015, inps" 
+				     style="width:100%;"/> 
+					    
+
+			</div>	 
+			
+				
+		</div>
+		<div class="freetextarea" >
+			<div style="text-align: center;"><strong><span style="font-size:18px"><span style="color:#0000FF"><a href="http://www.uim.it/uimweb/index.php" data-cke-saved-href="http://www.uim.it/uimweb/index.php">CUD INPS 2020</a></span></span></strong><br></div>		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+
+<div class="widget-wrapper widget-element free-text diy-resizable ">
+
+		<div id="widget-id-132807" 
+		class="widget-body " style="">
+		<div class="freetextarea">	
+	<div><strong><span style="color:windowtext">Per la dichiarazione delle imposte Svizzere per l’anno 2019,&nbsp;le occorre il Mod. CUD&nbsp; INPS (Rentenbescheinigung 2019).&nbsp;</span></strong><br></div><div><strong><span style="color:windowtext">​</span></strong><strong><span style="color:windowtext">&nbsp;</span></strong><span style="color:windowtext">I nostri Uffici sono in grado di fornirle gratuitamente questo modello che va richiesto</span><span style="color:windowtext"> per via telematica. Basta portare un documento d’identità e il numero della sua pensione, a partire dal mese di marzo 2020</span>. <strong><em>“<a href="http://ital-uil.ch/sedi-ital-in-svizzera.shtml" data-cke-saved-href="http://ital-uil.ch/sedi-ital-in-svizzera.shtml">Le sedi ITAL in Svizzera</a>”.</em></strong><br><br></div></div>
+<div class="clear"></div>	</div>
+</div>
+
+
+<div class="widget-wrapper widget-element free-text-image diy-resizable ">
+
+		<div id="widget-id-18232" 
+		class="widget-body " style="">
+				<div class="freetext-image" style=" width:47.58771929824561%; float:left;text-align-left">
+
+			<div class="image_wrapper free-image-left">
+			
+				
+				<img id="10237"
+				     src="/var/m_8/8d/8d4/1647/10237-immagineimu.jpg" 
+				     alt="IMU ITAL prima cassa italia italiani CAF " 
+				     style="width:100%;"/> 
+					    
+
+			</div>	 
+			
+				
+		</div>
+		<div class="freetextarea" >
+			<div><br></div><div><span style="font-size:24px">&nbsp;<span style="font-size:18px"><a href="http://cafuil.serviziuil.it/default2.asp" data-cke-saved-href="http://cafuil.serviziuil.it/default2.asp"><span style="color:rgb(0, 0, 255)"> IMU - Successioni in Italia</span></a></span></span><div><br></div><div><div><div>IMU, TARI, TARSU, VISURE CASTALI, &nbsp;SUCCESSIONI IN ITALIA,<br>Come fare ? Dove rivolgersi? Quali procedure seguire?</div></div><div><div><strong>La UIM Svizzera in collaborazione con il CAF </strong><br><strong>(Centro di Assistenza Fiscale della UIL) in Italia</strong><br>può &nbsp;aiutarti per il disbrigo di queste pratiche.</div></div>Rivolgiti con fiducia alla Sede <em><a href="http://www.uim.it/uimweb/index.php/blog" data-cke-saved-href="http://www.uim.it/uimweb/index.php/blog">UIM più vicina al tuo domicilio</a></em><br></div></div><div><br></div><div><br></div>		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+
+<div class="widget-wrapper widget-element free-text-image diy-resizable ">
+
+		<div id="widget-id-18242" 
+		class="widget-body " style="">
+				<div class="freetext-image" style=" width:25.274725274725274%; float:left;text-align-left">
+
+			<div class="image_wrapper free-image-left">
+			
+				
+				<img id="10239"
+				     src="/var/m_8/8d/8d4/1647/10239-UIM_logo2013.jpg" 
+				     alt="uim unione italiani nel mondo svizzera dino nardi" 
+				     style="width:100%;"/> 
+					    
+
+			</div>	 
+			
+				
+		</div>
+		<div class="freetextarea" >
+			<div><br></div><div><br></div><div style="text-align:justify"><span style="font-size:18px"><a href="http://www.uim.it/uimweb/index.php" data-cke-saved-href="http://www.uim.it/uimweb/index.php"><span style="color:#0000FF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></a></span><span style="font-size:18px"><a href="http://www.uim.it/uimweb/index.php" data-cke-saved-href="http://www.uim.it/uimweb/index.php"><span style="color:#0000FF">UNIONE ITALIANI NEL MONDO</span></a></span></div><div style="text-align:justify"><br></div><div style="text-align:justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div>A C C O R D O F I S C A L E&nbsp; T R A&nbsp; S V I Z Z E R A&nbsp; E&nbsp; D I T A L I A</div><div><strong>N E S S U N&nbsp; D O R M A ! </strong></div>Come ormai noto tra la Svizzera e l’Italia è stato già siglato un pre-accordo in materia fiscale che andrà a modificare sensibilmente l’attuale Convenzione bilaterale per evitare le doppie imposizioni fiscali del lontano 1976. <a href="http://ital-uil.ch/infouimeuropasvizzera.shtml" data-cke-saved-href="http://ital-uil.ch/infouimeuropasvizzera.shtml">( continua qui per leggere l'articolo )</a></div>		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+
+</div><div class="vertical" style="width: 50%;"><div class="widget-wrapper widget-element free-text diy-resizable ">
+
+		<div id="widget-id-18241" 
+		class="widget-body " style="">
+		<div class="freetextarea">	
+	<div><div><br></div><div><span style="font-size:22px"><strong>ASSISTENZA E CONSULENZA ITALUIL </strong></span></div><div><div><strong>L’ITAL-UIL offre <u>gratuitamente</u><br>assistenza e consulenza in materia di:</strong><br><br></div><ul><li><strong>Assicurazioni sociali svizzere</strong></li></ul><div><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; Pensione vecchiaia o anticipata AVS</div><div style="margin-left:155.95pt">Prestazioni complementari AVS / AI</div><div style="margin-left:155.95pt">Domande pensioni invalidità AI</div><div style="margin-left:155.95pt">Infortuni SUVA e malattie professionali</div><div style="margin-left:155.95pt">Informazioni Disoccupazione<br><br></div><ul><li><strong>Cassa pensione (LPP) </strong></li></ul><div style="margin-left:155.95pt">Richiesta/Domande ritiro capitale/rendita LPP</div><div style="margin-left:155.95pt">Prepensionamento Edilizia<br><br></div><ul><li>&nbsp; <strong>Fisco</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Consulenza fiscale e verifica<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tassazione<br></li></ul><div><br></div><ul><li><strong>INPS Istituto Nazionale Previdenza Sociale </strong></li></ul><div style="margin-left:155.95pt">Pensione di vecchiaia, anzianità, Pensione di superstiti</div><div style="margin-left:155.95pt">Pensione di inabilità</div><div style="margin-left:155.95pt">Estratti conto INPS</div><div style="margin-left:155.95pt">Comunicazioni RedEst</div><div style="margin-left:155.95pt">Rilascio CUD Certificazione Unica</div><div style="margin-left:155.95pt"><br></div><div style="margin-left:155.95pt"><br></div></div></div></div>
+<div class="clear"></div>	</div>
+</div>
+
+
+</div></div></div><div class="clearfix"></div></div></div>         </div>
+      </div>
+
+      <div class="footer sixteen columns alpha">
+         <div class="footer_menu ">
+         <ul id="mirror-menu-module"><li id="mirror_menu_td_2794" class="mirror_menu"><a href="/" target="_self" title="Home" data-pageid="2794" data-act="canvas" data-itemid="2775" data-cat="0">Home</a></li><li id="mirror_menu_td_2954" class="mirror_menu"><a href="/chi-siamo.shtml" target="_self" title="Chi siamo " data-pageid="2954" data-act="canvas" data-itemid="2928" data-cat="0">Chi siamo </a></li><li id="mirror_menu_td_923683" class="mirror_menu"><a href="/chi-siamo-copy.shtml" target="_self" title="Wer sind wir " data-pageid="923683" data-act="canvas" data-itemid="975992" data-cat="0">Wer sind wir </a></li><li id="mirror_menu_td_923684" class="mirror_menu"><a href="/chi-siamo-deutsch-copy.shtml" target="_self" title="Qui sommes-nous? " data-pageid="923684" data-act="canvas" data-itemid="975993" data-cat="0">Qui sommes-nous? </a></li><li id="mirror_menu_td_2955" class="mirror_menu"><a href="/sedi-ital-in-svizzera.shtml" target="_self" title="Le sedi in Svizzera" data-pageid="2955" data-act="canvas" data-itemid="2929" data-cat="0">Le sedi in Svizzera</a></li><li id="mirror_menu_td_2956" class="mirror_menu"><a href="/domande-al-ital.shtml" target="_self" title="Contatto" data-pageid="2956" data-act="canvas" data-itemid="2930" data-cat="0">Contatto</a></li><li id="mirror_menu_td_2979" class="mirror_menu"><a href="/eventi-ital.shtml" target="_self" title="Eventi ITAL" data-pageid="2979" data-act="canvas" data-itemid="2952" data-cat="0">Eventi ITAL</a></li><li id="mirror_menu_td_32546" class="mirror_menu"><a href="/serate-ital.shtml" target="_self" title="Serate informative" data-pageid="32546" data-act="events" data-itemid="0" data-cat="0">Serate informative</a></li></ul>            <div class="footerdata ">
+               <div id="footerContent"><div>Created By ITALUIL Svizzera  09/2014 </div>
+</div>
+<div id="mySocialList" class="addthis_toolbox addthis_32x32_style addthis_default_style"></div>
+
+        
+	<script type="application/ld+json">
+	{
+	  "@context": "http://schema.org",
+	  "@type": "LocalBusiness",
+	  "url": "http://www.ital-uil.ch",
+		 "sameAs" : [
+		 	  ]
+	}
+</script>
+
+
+            </div>
+         </div>
+         <div class="languages">
+					</div>
+      </div>
+   </div>
+		
+	            
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org",
+	"@type": "LocalBusiness",
+	"url": "https://www.ital-uil.ch",
+	"name": "ITALUIL Svizzera",
+	"email": "callcenter.italuil@bluewin.ch",
+	"address": {
+	    "@type": "PostalAddress",
+	    "addressLocality": "",
+	    "addressRegion": "",
+	    "addressCountry":"Switzerland",
+	    "postalCode":"",
+	    "streetAddress": ""
+	                },
+	"telephone": "",
+	"fax": "",
+	"image": ""
+}
+</script>
+
+	
+<script type="text/javascript">
+    //<!--
+    var sid = 1647;    //-->
+</script>
+<script type="text/javascript">
+    //<!--
+    $(document).ready(function(){efu.widgets.inlineJs('se',{"MODULE_SEARCH_TITLE":"Ricerca","LANG_SEARCHRESULTS":"Risultati ricerca","LANG_NEXT":"Avanti","LANG_PREV":"Indietro","LANG_SHOWING":"Visualizzazione","LANG_OF":"di","LANG_ITEMS":"elementi","MODULE_SEARCH_CONTAINER_ID":"wp_content_data"})});    //-->
+</script>
+<script type="text/javascript" src="/js/bundles/front_bundle.min.js?v=7.3.44939"></script><script type="text/javascript">
+    //<!--
+    jQuery(function($) {socialEntries = {"facebook":"","twitter":"","linkedin":"","linkedincompany":"","googleplus":""};
+socialEntriesTitle = {"facebook":" Segui su Facebook","twitter":"Segui su Twitter","linkedin":"Segui su LinkedIn","linkedincompany":"Segui su LinkedIn","googleplus":"Segui su Google Plus"};
+$.each(socialEntries, function(key, value) {
+      buildSocialEntry(key, value, socialEntriesTitle[key]);
+});
+getDependecies();
+});    //-->
+</script>
+<script type="text/javascript">
+    //<!--
+    
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	var gaSettings = {
+	  siteOwnerTrackingCode: false,
+		resellerTrackingCode: false,
+		resellerTrackerName: 'resellerTracker',
+		siteOwnerTrackerName: 'siteOwnerTracker'
+	};	
+  
+ 
+      gaSettings.siteOwnerTrackingCode = true;
+        ga('create', 'UA-54713671-1', 'auto', {'name': gaSettings.siteOwnerTrackerName});  
+    ga(gaSettings.siteOwnerTrackerName+'.send', 'pageview');
+      
+  
+      gaSettings.resellerTrackingCode = true;
+        ga('create', 'UA-65453061-1', 'auto', {'name': gaSettings.resellerTrackerName});  
+    ga(gaSettings.resellerTrackerName+'.send', 'pageview');
+
+     
+
+    //-->
+</script>
+</body>
+</html>
